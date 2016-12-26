@@ -1,0 +1,13 @@
+body {
+
+}
+.ro-note-playing {
+  /*background-color: yellow;*/
+}
+.ro-note-loading {
+  background-color: green;
+}
+.control {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
