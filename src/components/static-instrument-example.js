@@ -1,5 +1,6 @@
 import React from 'react';
 import {Instrument, Note} from 'react-orchestra';
+
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 class StaticInstrumentExample extends React.Component {
@@ -28,6 +29,9 @@ class StaticInstrumentExample extends React.Component {
       <div>
         <Instrument name={'acoustic_grand_piano'} interactive={false} onInstrumentLoaded={this.onInstrumentLoaded}>
           <Note name={'A3'} play={this.state.playA}>
+            {/*
+              You can put any react element here native or web.
+            */}
             <div className="control">
               <a className={`button ${this.state.playA ? 'is-primary' : ''}`}>
                 This is what I want my note to look like ! I can put anything in here.
